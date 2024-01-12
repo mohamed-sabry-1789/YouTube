@@ -453,37 +453,41 @@ input:checked+.toggle::before {
     margin-top: 20px;
 }
 
-.page-normal .page .mobile i {
-    cursor: pointer;
-    color: white;
-}
+
 
 @media(max-width:767px) {
     .page-normal .page .mobile {
         display: block;
     }
+
+    .page-normal .page .mobile i {
+        cursor: pointer;
+        color: white;
+    }
+
+    .page-normal .page .mobile input {
+        width: 200px;
+        border-radius: 50px 50px;
+        padding: 13px 0 13px 30px;
+        border: 1px solid #DDD;
+    }
+
+    .page-normal .page .mobile input:focus {
+        border-color: blue;
+    }
+
+    .page-normal .page .mobile .mic {
+        margin-left: 10px;
+    }
+
+    .page-normal .page .header form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.page-normal .page .mobile input {
-    width: 200px;
-    border-radius: 50px 50px;
-    padding: 13px 0 13px 30px;
-    border: 1px solid #DDD;
-}
 
-.page-normal .page .mobile input:focus {
-    border-color: blue;
-}
-
-.page-normal .page .mobile .mic {
-    margin-left: 10px;
-}
-
-.page-normal .page .header form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 @media(max-width:767px) {
     .page-normal .page .header form {
@@ -730,6 +734,11 @@ input:checked+.toggle::before {
         grid-template-columns: minmax(100px, 1fr);
         gap: 20px;
         margin: 20px;
+    }
+
+    .page-normal .page .page-content .content .videos .control {
+
+        height: 68%;
     }
 }
 

@@ -195,12 +195,12 @@ label input[type="checkbox"] {
     display: none;
 }
 
-input:checked + .toggle {
+input:checked+.toggle {
     background-color: #0075FF;
 
 }
 
-input:checked + .toggle::before {
+input:checked+.toggle::before {
     left: 31px;
     content: "\f058";
 }
@@ -214,7 +214,7 @@ input:checked + .toggle::before {
 
 }
 
-.page-normal .mood > a {
+.page-normal .mood>a {
     text-transform: capitalize;
     position: relative;
     top: 10px;
@@ -261,7 +261,7 @@ input:checked + .toggle::before {
     align-items: center;
 }
 
-.page-normal .page .header .nav-logo > input[type="checkbox"] {
+.page-normal .page .header .nav-logo>input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     display: none;
@@ -272,7 +272,7 @@ input:checked + .toggle::before {
 
 }
 
-.page-normal .page .header .nav-logo label > i {
+.page-normal .page .header .nav-logo label>i {
     font-size: 25px;
     font-weight: none;
     width: 40px;
@@ -299,11 +299,11 @@ input:checked + .toggle::before {
     z-index: -100;
 }
 
-.page-normal .page .header .nav-logo input[type="checkbox"]:checked + label .nav {
+.page-normal .page .header .nav-logo input[type="checkbox"]:checked+label .nav {
     left: -30px;
 }
 
-.page-normal .page .header .nav-logo input[type="checkbox"]:checked + label .overlay {
+.page-normal .page .header .nav-logo input[type="checkbox"]:checked+label .overlay {
     left: 220px;
     z-index: 1;
 }
@@ -314,7 +314,7 @@ input:checked + .toggle::before {
 
     }
 
-    .page-normal .page .header .nav-logo input[type="checkbox"]:checked + label .overlay {
+    .page-normal .page .header .nav-logo input[type="checkbox"]:checked+label .overlay {
         left: 150px;
 
     }
@@ -396,7 +396,7 @@ input:checked + .toggle::before {
     }
 }
 
-.page-normal .nav-logo > a {
+.page-normal .nav-logo>a {
     color: black;
     text-transform: capitalize;
     display: flex;
@@ -406,7 +406,7 @@ input:checked + .toggle::before {
 
 }
 
-.page-normal .nav-logo > a sup {
+.page-normal .nav-logo>a sup {
     font-weight: normal;
     margin-left: 3px;
     text-transform: uppercase;
@@ -455,25 +455,27 @@ input:checked + .toggle::before {
     .page-normal .page .mobile {
         display: block;
     }
+
+    .page-normal .page .mobile input {
+        width: 200px;
+        border-radius: 50px 50px;
+        padding: 13px 0 13px 30px;
+        border: 1px solid #DDD;
+    }
+
+    .page-normal .page .mobile input:focus {
+        border-color: blue;
+    }
+
+    .page-normal .page .mobile .mic {
+        margin-left: 10px;
+    }
+
+    .page-normal .page .mobile i {
+        cursor: pointer;
+    }
 }
 
-.page-normal .page .mobile input {
-    width: 200px;
-    border-radius: 50px 50px;
-    padding: 13px 0 13px 30px;
-    border: 1px solid #DDD;
-}
-
-.page-normal .page .mobile input:focus {
-    border-color: blue;
-}
-
-.page-normal .page .mobile .mic {
-    margin-left: 10px;
-}
-.page-normal .page .mobile   i {
-    cursor: pointer;
-}
 
 .page-normal .page .header form {
     display: flex;
@@ -494,7 +496,7 @@ input:checked + .toggle::before {
     font-size: 20px;
 }
 
-.page-normal .page .header form > .hover {
+.page-normal .page .header form>.hover {
     position: absolute;
     left: -30px;
     top: 2px;
@@ -511,7 +513,7 @@ input:checked + .toggle::before {
 }
 
 
-.page-normal .page .header form > label i {
+.page-normal .page .header form>label i {
     border: 1px solid rgb(233, 232, 232);
     padding: 14px 30px;
     border-left: none;
@@ -521,11 +523,11 @@ input:checked + .toggle::before {
     background-color: rgba(238, 236, 236, 0.452);
 }
 
-.page-normal .page .header form > label i:hover {
+.page-normal .page .header form>label i:hover {
     background-color: rgba(238, 236, 236, 0.664);
 }
 
-.page-normal .page .header form > .mic {
+.page-normal .page .header form>.mic {
     width: 50px;
     height: 50px;
     background-color: rgba(238, 238, 238, 0.329);
@@ -537,7 +539,7 @@ input:checked + .toggle::before {
     cursor: pointer;
 }
 
-.page-normal .page .header form > .mic:hover {
+.page-normal .page .header form>.mic:hover {
     background-color: rgba(238, 238, 238, 0.788);
 }
 
@@ -554,7 +556,7 @@ input:checked + .toggle::before {
     }
 }
 
-.page-normal .page .header .user > i {
+.page-normal .page .header .user>i {
     font-size: 22px;
 
 }
@@ -678,7 +680,7 @@ input:checked + .toggle::before {
     align-items: center;
 }
 
-.page-normal .page .page-content .content .nav-list > div {
+.page-normal .page .page-content .content .nav-list>div {
     padding: 10px 15px;
     background-color: rgba(238, 238, 238, 0.575);
     border-radius: 10px;
@@ -687,16 +689,16 @@ input:checked + .toggle::before {
 
 }
 
-.page-normal .page .page-content .content .nav-list > div:hover {
+.page-normal .page .page-content .content .nav-list>div:hover {
     background-color: rgba(238, 238, 238, 0.774);
 }
 
-.page-normal .page .page-content .content .nav-list > div:active {
+.page-normal .page .page-content .content .nav-list>div:active {
     background-color: black;
     color: white;
 }
 
-.page-normal .page .page-content .content .nav-list > div:first-child {
+.page-normal .page .page-content .content .nav-list>div:first-child {
     background-color: black;
     color: white;
 }
@@ -714,6 +716,11 @@ input:checked + .toggle::before {
         grid-template-columns: minmax(100px, 1fr);
         gap: 20px;
         margin: 20px;
+    }
+
+    .page-normal .page .page-content .content .videos .control {
+
+        height: 68%;
     }
 }
 
@@ -753,7 +760,7 @@ input:checked + .toggle::before {
     color: #777;
 }
 
-.page-normal .page .page-content .content .videos .control .info > div {
+.page-normal .page .page-content .content .videos .control .info>div {
     font-size: 14px;
     color: #777;
 }
