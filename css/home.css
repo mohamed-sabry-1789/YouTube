@@ -165,49 +165,6 @@ a {
     }
 }
 
-
-/* start toggle button  */
-.toggle {
-    width: 50px;
-    height: 20px;
-    background-color: #777;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-    z-index: 999999;
-}
-
-.toggle::before {
-    content: "\f057";
-    font-family: var(--fa-style-family-classic);
-    font-weight: 900;
-    color: white;
-    position: absolute;
-    left: 3px;
-    top: 1px;
-    transition: .5s;
-
-}
-
-label input[type="checkbox"] {
-    -webkit-appearance: none;
-    appearance: none;
-    display: none;
-}
-
-input:checked+.toggle {
-    background-color: #0075FF;
-
-}
-
-input:checked+.toggle::before {
-    left: 31px;
-    content: "\f058";
-}
-
-/* end toggle button  */
-
-
 /* start header  */
 .page-normal {
     background-color: white;
@@ -299,10 +256,6 @@ input:checked+.toggle::before {
     z-index: -100;
 }
 
-.page-normal .page .header .nav-logo input[type="checkbox"]:checked+label .nav {
-    left: -30px;
-}
-
 .page-normal .page .header .nav-logo input[type="checkbox"]:checked+label .overlay {
     left: 220px;
     z-index: 1;
@@ -329,6 +282,10 @@ input:checked+.toggle::before {
 
 }
 
+.page-normal .page .header .nav-logo input[type="checkbox"]:checked+label .nav {
+    left: -30px;
+}
+
 .page-normal .page .header .nav-logo label .nav li {
     margin-bottom: 20px;
     margin-left: 30px;
@@ -344,7 +301,7 @@ input:checked+.toggle::before {
     content: "";
     width: 100%;
     height: 1px;
-    background-color: #EEE;
+    background-color: #a50c0c;
     position: absolute;
     bottom: -20px;
     left: -5px;
@@ -413,7 +370,7 @@ input:checked+.toggle::before {
 }
 
 .page-normal .nav-logo a i {
-    color: red;
+    color: rgb(255, 0, 0);
     font-size: 30px;
     margin-right: 5px;
 }

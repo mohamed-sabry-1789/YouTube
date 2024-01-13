@@ -165,49 +165,6 @@ a {
     }
 }
 
-
-/* start toggle button  */
-.toggle {
-    width: 50px;
-    height: 20px;
-    background-color: #777;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-    z-index: 999999;
-}
-
-.toggle::before {
-    content: "\f057";
-    font-family: var(--fa-style-family-classic);
-    font-weight: 900;
-    color: white;
-    position: absolute;
-    left: 3px;
-    top: 1px;
-    transition: .5s;
-
-}
-
-label input[type="checkbox"] {
-    -webkit-appearance: none;
-    appearance: none;
-    display: none;
-}
-
-input:checked+.toggle {
-    background-color: #0075FF;
-
-}
-
-input:checked+.toggle::before {
-    left: 31px;
-    content: "\f058";
-}
-
-/* end toggle button  */
-
-
 /* start header  */
 .page-normal {
     background-color: rgb(0, 0, 0);
