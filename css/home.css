@@ -192,6 +192,14 @@ a {
     animation: hid 0.1s 1.9s linear forwards;
 }
 
+@media(max-width:768px) {
+    .page-normal .parent {
+
+        top: -40%;
+
+    }
+}
+
 @keyframes enterhide {
     0% {
         display: block;
