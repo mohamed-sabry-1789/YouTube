@@ -97,30 +97,6 @@ a {
 
 }
 
-.head-page {
-    margin: 20px 20px 40px;
-    text-transform: capitalize;
-    font-size: 25px;
-    position: relative;
-    width: fit-content;
-}
-
-@media (max-width:767px) {
-    .head-page {
-        margin: 20px 20px 30px;
-    }
-}
-
-.head-page::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-image: linear-gradient(to right, black 30%, white 30%);
-    bottom: -10px;
-    left: 0;
-
-}
 
 
 /* start header  */
